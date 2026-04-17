@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "todoist-triage": {
+      "source": "croesnick/agent-skill-todoist-triage",
+      "sourceType": "github",
+      "computedHash": "184bdc4fc802d80b51f836885370af06efd37c20035d8e32ac2eed2d8d472f77"
+    }
+  }
+}

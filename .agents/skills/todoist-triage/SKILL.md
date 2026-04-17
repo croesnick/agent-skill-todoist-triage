@@ -1,6 +1,6 @@
 ---
 name: todoist-triage
-description: Triage and manage Todoist inbox tasks using a multi-dimensional system (MoSCoW priorities, time estimates, skill × leverage value tags, and context labels). Use when sorting, triaging, prioritizing, or organizing tasks in Todoist, or when the user mentions inbox cleanup, task categorization, or task dimensions.
+description: Triage and manage Todoist inbox tasks using a multi-dimensional system (MoSCoW priorities, time estimates, impact × leverage value tags, and context labels). Use when sorting, triaging, prioritizing, or organizing tasks in Todoist, or when the user mentions inbox cleanup, task categorization, or task dimensions.
 metadata:
   author: crn
   version: "1.0"
@@ -47,14 +47,14 @@ Add one time label:
 | `L` | Several hours |
 | `XL` | ~1 day (it's a project) |
 
-### 3. Skill × Leverage (2D Value Tags)
+### 3. Impact × Leverage (2D Value Tags)
 
 Add **two** labels — one for each axis:
 
 | Label | Axis | Meaning |
 |-------|------|---------|
-| `skill-low` | Skill | Low specialization, anyone could do it |
-| `skill-high` | Skill | High specialization, requires your expertise |
+| `impact-low` | Impact | Low specialization, anyone could do it |
+| `impact-high` | Impact | High specialization, requires your expertise |
 | `leverage-low` | Leverage | Affects one case, one person |
 | `leverage-high` | Leverage | Affects many people or whole systems |
 
@@ -62,12 +62,12 @@ The combination tells you what kind of work it is:
 
 | Combination | Character | Examples |
 |-------------|-----------|---------|
-| `skill-low` + `leverage-low` | Manual, direct | Answering emails, data entry |
-| `skill-low` + `leverage-high` | Systemic, automated — "busywork at scale" | Script helping 20 people, docs saving 50 questions |
-| `skill-high` + `leverage-low` | Specialized, individual — expertise without scale | Hard bug, architecture decision, incident mgmt |
-| `skill-high` + `leverage-high` | Strategic + systemic — changes whole systems | Platform architecture, product vision, process design |
+| `impact-low` + `leverage-low` | Manual, direct | Answering emails, data entry |
+| `impact-low` + `leverage-high` | Systemic, automated — "busywork at scale" | Script helping 20 people, docs saving 50 questions |
+| `impact-high` + `leverage-low` | Specialized, individual — expertise without scale | Hard bug, architecture decision, incident mgmt |
+| `impact-high` + `leverage-high` | Strategic + systemic — changes whole systems | Platform architecture, product vision, process design |
 
-**Key:** Skill and leverage are orthogonal. High leverage doesn't mean high skill, and vice versa.
+**Key:** Impact and leverage are orthogonal. High leverage doesn't mean high impact, and vice versa.
 
 ### 4. Context Tags
 
@@ -89,7 +89,7 @@ Place the task in the correct project. Read [project structure reference](refere
 
 - Tasks with `waiting` status MUST include a comment explaining what they're blocked on and a reschedule date
 - `next` tag = the single next physical action (GTD-style) — not "plan the project" but "draft the email"
-- `skill-high` + `leverage-high` work should be protected — schedule deep-focus blocks, don't let it get squeezed by `skill-low` + `leverage-low` tasks
+- `impact-high` + `leverage-high` work should be protected — schedule deep-focus blocks, don't let it get squeezed by `impact-low` + `leverage-low` tasks
 - An `XL` task is actually a project — consider breaking it into subtasks
 - Tasks without a time estimate are invisible to planning — always assign one
 
@@ -99,7 +99,7 @@ For each inbox task:
 
 - [ ] Priority assigned (P1–P4)
 - [ ] Time estimate label added (XS–XL)
-- [ ] Skill label added (skill-low or skill-high)
+- [ ] Impact label added (impact-low or impact-high)
 - [ ] Leverage label added (leverage-low or leverage-high)
 - [ ] Context tags added (at least one if applicable)
 - [ ] Project assigned

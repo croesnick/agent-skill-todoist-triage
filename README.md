@@ -1,6 +1,6 @@
 # agent-skill-todoist-triage
 
-An [Agent Skill](https://agentskills.io/) for triaging Todoist inbox tasks using a multi-dimensional system: MoSCoW priorities, time estimates, impact × leverage value tags, and context labels.
+An [Agent Skill](https://agentskills.io/) for triaging Todoist inbox tasks using a multi-dimensional system: MoSCoW priorities, time estimates, skill × leverage value tags, and context labels.
 
 ## What it does
 
@@ -8,7 +8,7 @@ Turns a flat Todoist inbox into a structured, actionable system by assigning fou
 
 1. **Priority** (P1–P4) — MoSCoW: Must / Should / Could / Would
 2. **Time estimate** (XS / S / M / L / XL) — T-shirt sizing
-3. **Impact × Leverage** (`impact-low`/`impact-high` + `leverage-low`/`leverage-high`) — replaces the $10k Work dollar labels with two clean orthogonal axes
+3. **Skill × Leverage** (`skill-low`/`skill-high` + `leverage-low`/`leverage-high`) — two clean orthogonal axes replacing the $10k Work dollar labels
 4. **Context tags** — work type, status, energy, location, communication channel
 
 Then places the task in the right project.

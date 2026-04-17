@@ -27,7 +27,7 @@ The priority field is set via Todoist's native `priority` field, not labels.
 
 **Rule of thumb:** If you can't describe the "done" state in one sentence, it's probably M or larger.
 
-## Skill × Leverage Tags
+## Impact × Leverage Tags
 
 Two orthogonal label axes inspired by Khe Hy's [$10k Work](https://coda.io/@khe-hy/10k-work) framework:
 
@@ -35,8 +35,8 @@ Two orthogonal label axes inspired by Khe Hy's [$10k Work](https://coda.io/@khe-
 
 | Label | Meaning |
 |-------|---------|
-| `skill-low` | Low specialization — anyone could do this |
-| `skill-high` | High specialization — requires your expertise |
+| `impact-low` | Low specialization — anyone could do this |
+| `impact-high` | High specialization — requires your expertise |
 | `leverage-low` | Affects one case, one person |
 | `leverage-high` | Affects many people or whole systems |
 
@@ -45,34 +45,34 @@ Two orthogonal label axes inspired by Khe Hy's [$10k Work](https://coda.io/@khe-
 ```
               leverage-low    leverage-high
              ┌────────────────┬────────────────┐
-skill-high   │  Specialized   │  Strategic     │
+impact-high  │  Specialized   │  Strategic     │
              │  individual    │  systemic      │
              ├────────────────┼────────────────┤
-skill-low    │  Manual        │  Systemic      │
+impact-low   │  Manual        │  Systemic      │
              │  direct        │  automated     │
              └────────────────┴────────────────┘
 ```
 
-### skill-low + leverage-low — Manual Labor
+### impact-low + leverage-low — Manual Labor
 - One-off, hands-on, no scaling
 - Examples: Answering an email, data entry, booking a flight
 
-### skill-low + leverage-high — Busywork at Scale
+### impact-low + leverage-high — Busywork at Scale
 - Systemic, reusable, automates or standardizes
 - Examples: Script that helps 20 people, docs that save 50 questions, automatic reminder, template
 
-### skill-high + leverage-low — Expert Work
+### impact-high + leverage-low — Expert Work
 - Difficult, individual — only you can do it
 - Examples: Hard bug, architecture decision, incident management, 1:1 coaching
 
-### skill-high + leverage-high — Strategic Systemic
+### impact-high + leverage-high — Strategic Systemic
 - Changes whole systems, strategic + systemic
 - Examples: Platform architecture, product vision, process redesign, hiring framework
 
 ### Decision Guide
 
 Ask two questions:
-1. **"Does this require specialized skill only I have?"** → Yes = `skill-high`
+1. **"Does this require specialized skill only I have?"** → Yes = `impact-high`
 2. **"Does this affect many people/systems?"** → Yes = `leverage-high`
 
 If both are yes → protect this work with deep-focus blocks.
@@ -115,8 +115,8 @@ Common effective combinations:
 
 | Pattern | Tags | Example |
 |---------|------|---------|
-| Quick win | `XS skill-low leverage-high next` | "Write script to automate daily report" |
-| Deep work block | `L skill-high leverage-high deep-focus` | "Design new API architecture" |
-| Low energy task | `XS skill-low leverage-low energy-low` | "Reply to non-urgent emails" |
-| Blocked item | `M skill-high leverage-low waiting` | "Review PR — waiting on author response" |
-| Errand | `S skill-low leverage-low errands` | "Pick up package from post office" |
+| Quick win | `XS impact-low leverage-high next` | "Write script to automate daily report" |
+| Deep work block | `L impact-high leverage-high deep-focus` | "Design new API architecture" |
+| Low energy task | `XS impact-low leverage-low energy-low` | "Reply to non-urgent emails" |
+| Blocked item | `M impact-high leverage-low waiting` | "Review PR — waiting on author response" |
+| Errand | `S impact-low leverage-low errands` | "Pick up package from post office" |
