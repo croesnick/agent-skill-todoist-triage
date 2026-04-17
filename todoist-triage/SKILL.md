@@ -1,6 +1,6 @@
 ---
 name: todoist-triage
-description: Triage and manage Todoist inbox tasks using a multi-dimensional system (MoSCoW priorities, time estimates, $10k-work value tags, and context labels). Use when sorting, triaging, prioritizing, or organizing tasks in Todoist, or when the user mentions inbox cleanup, task categorization, or task dimensions.
+description: Triage and manage Todoist inbox tasks using a multi-dimensional system (MoSCoW priorities, time estimates, impact × leverage value tags, and context labels). Use when sorting, triaging, prioritizing, or organizing tasks in Todoist, or when the user mentions inbox cleanup, task categorization, or task dimensions.
 metadata:
   author: crn
   version: "1.0"
